@@ -1,0 +1,18 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/">Homepage</a>
+    </div>
+    <form action="/category/<%=id%>/delete" method="POST" class="delete-form">
+        <h2>Delete Category</h2>
+        <fieldset class="info-fields">
+            <P>Are you sure you want to delete <%= category.name %>?</P>
+        </fieldset>
+        <fieldset>
+            <input type="submit" class="submit-button" value="Delete">
+            <a href="/category/<%=id%>/edit" class="cancel-button">
+                Go Back
+            </a>
+        </fieldset>
+    </form>
+  </body>
+</html>

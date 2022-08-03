@@ -1,0 +1,34 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/">Homepage</a>
+    </div>
+    <form action="/category/<%=categoryId%>/<%=item._id%>/edit" method="POST" class="new-item-form">
+        <h2>Edit Item</h2>
+        <fieldset class="info-fields">
+            <label for="name">
+                Name:
+                <input type="text" name="name" value="<%=item.name%>" required>
+            </label>
+            <label for="description">
+                Description:
+                <textarea name="description" id="" cols="30" rows="10" required><%=item.description%></textarea>
+            </label>
+            <label for="price">
+                Price:
+                <input type="number" name="price" step="any" value="<%=item.price%>">
+            </label>
+            <label for="number_in_stock">
+                Number in Stock:
+                <input type="number" name="number_in_stock" value="<%=item.number_in_stock%>">
+            </label>
+        </fieldset>
+        <fieldset class="button-container">
+            <div>
+                <input type="submit" class="submit-button">
+                <a href="<%= previousURL %>" class="cancel-button">Cancel</a>
+            </div>
+            <a href="/category/<%=categoryId%>/<%=item._id%>/delete" class="delete-button">Delete</a>
+        </fieldset>
+    </form>
+  </body>
+</html>

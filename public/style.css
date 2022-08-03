@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* index */
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container a {
+  margin: 0 10px;
+}
+
+.category-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.categories {
+  border: 1px solid black;
+  text-align: center;
+  width: 400px;
+  margin: 10px 0;
+}
+
+.categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories p {
+  margin: 20px 0;
+}
+
+.category-name {
+  font-weight: bold;
+}
+
+.category-actions {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-actions a {
+  margin: 10px;
+}
+
+.item-count {
+  color: #333333;
+  font-size: 14px;
+}
+
+/* Create category form */
+
+.new-category-form {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0;
+  width: 400px;
+}
+
+.new-category-form h2 {
+  text-align: center;
+}
+
+.info-fields {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.info-fields label {
+  margin: 10px 0;
+}
+
+.info-fields input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.info-fields textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Category Detail Page */
+
+.category-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.category-list-container {
+  margin: 10px 0;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list-items {
+  border: 1px solid black;
+  padding: 10px;
+  width: 500px;
+  margin: 10px 0;
+}
+
+.category-list-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-name {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.item-description {
+  margin-bottom: 20px;
+}
+
+.item-price-stock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-stock {
+  color: #333333;
+}
+
+.item-price {
+  color: #333333;
+}
+
+.delete-button {
+  border: 1px solid black;
+  padding: 7.5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Create item form */
+
+.new-item-form {
+  margin: 60px 0;
+  width: 400px;
+}
+
+.new-item-form h2 {
+  text-align: center;
+}
+
+/* Delete Page */
+.delete-form {
+  text-align: center;
+  margin: 60px 0;
+  width: 400px;
+}
+
+.cancel-button {
+  border: 1px solid black;
+  padding: 7.5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Edit Forms */
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

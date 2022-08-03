@@ -1,0 +1,21 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/new-category">New Category</a>
+    </div>
+    <div class="category-list-container">
+        <% categories.map((value) => { %>
+            <div class="categories">
+                <a href="/category/<%=value._id%>" class>
+                    <p class="category-name"><%=value.name%></p>
+                    <p><%=value.description%></p>
+                    <p class="item-count">Items: <%= value.items.length %></p>
+                    <div class="category-actions">
+                        <a href="/category/<%=value.id%>/edit">Edit</a>
+                        <a href="/category/<%=value.id%>/new-item">Add item</a>
+                    </div>
+                </a>
+            </div>
+        <% }) %>
+    </div>
+  </body>
+</html>

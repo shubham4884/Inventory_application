@@ -1,0 +1,25 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/">Back</a>
+    </div>
+    <form action="/new-category" method="POST" class="new-category-form">
+        <h2>New Category</h2>
+        <fieldset class="info-fields">
+            <label for="name" >
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <label for="description">
+                Description:
+                <textarea name="description" id="" cols="30" rows="10" required></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="submit">
+                <input type="submit" class="submit-button">
+                <a href="<%= previousURL %>" class="cancel-button">Cancel</a>
+            </label>
+        </fieldset>
+    </form>
+  </body>
+</html>

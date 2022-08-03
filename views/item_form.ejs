@@ -1,0 +1,33 @@
+<%- include('partials/head')%>
+    <div class="nav-container">
+        <a href="/">Homepage</a>
+    </div>
+    <form action="/category/<%=id%>/new-item" method="POST" class="new-item-form">
+        <h2>New Item</h2>
+        <fieldset class="info-fields">
+            <label for="name">
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <label for="description">
+                Description:
+                <textarea name="description" id="" cols="30" rows="10" required></textarea>
+            </label>
+            <label for="price">
+                Price:
+                <input type="number" name="price" value=0 step="any">
+            </label>
+            <label for="number_in_stock">
+                Number in Stock:
+                <input type="number" name="number_in_stock" value=0>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="submit">
+                <input type="submit" class="submit-button">
+            </label>
+            <a href="<%= previousURL %>" class="cancel-button">Cancel</a>
+        </fieldset>
+    </form>
+  </body>
+</html>
